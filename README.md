@@ -33,9 +33,9 @@ Extend the **scripts** section of your `package.json` file.
 
 ```
 "scripts": {
-  "postinstall": "npm run copy-offline-pds-react-build && npm run copy-offline-pds-js-build",
-  "copy-offline-pds-react-build": "rm -rf ./node_modules/@porsche-design-system/components-react && cp -r ./@porsche-design-system/components-react/. ./node_modules/@porsche-design-system/components-react",
-  "copy-offline-pds-js-build": "rm -rf ./node_modules/@porsche-design-system/components-js && cp -r ./@porsche-design-system/components-js/. ./node_modules/@porsche-design-system/components-js",
+  "postinstall": "npm run copy:@porsche-design-system/components-react && npm run copy:@porsche-design-system/components-js",
+  "copy:@porsche-design-system/components-react": "rm -rf ./node_modules/@porsche-design-system/components-react && cp -r ./@porsche-design-system/components-react/. ./node_modules/@porsche-design-system/components-react",
+  "copy:@porsche-design-system/components-js": "rm -rf ./node_modules/@porsche-design-system/components-js && cp -r ./@porsche-design-system/components-js/. ./node_modules/@porsche-design-system/components-js",
   …
 }
 ```
