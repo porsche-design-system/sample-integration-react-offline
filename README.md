@@ -40,7 +40,7 @@ Extend the **scripts** section of your `package.json` file.
 }
 ```
 
-### Step 3
+### Step 4
 
 Exclude Porsche Design System from Vite's cache.
 
@@ -55,7 +55,7 @@ export default defineConfig({
 })
 ```
 
-### Step 4
+### Step 5
 
 Add the `@porsche-design-system/components-react` npm package with version `3.29.0`.
 
@@ -63,7 +63,7 @@ Add the `@porsche-design-system/components-react` npm package with version `3.29
 npm install @porsche-design-system/components-react@3.29.0
 ```
 
-### Step 5
+### Step 6
 
 Wrap your application with the `<PorscheDesignSystemProvider />`, then integrate the Porsche Design System components you need.
 
@@ -86,7 +86,7 @@ createRoot(document.getElementById('root')!).render(
 );
 ```
 
-### Step 6
+### Step 7
 
 Once the web application is built and served, open your browser's developer console.
 All Porsche Design System assets should then be loaded from `${YOUR_BASE_URL}`.
