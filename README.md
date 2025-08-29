@@ -20,11 +20,17 @@ Copy the `./@porsche-design-system` folder and its contents from this repository
 
 ### Step 2
 
-Move the assets from `./@porsche-design-system/assets` to `./public/assets/porsche-design-system`, ensuring they are served at `${YOUR_BASE_URL}/assets/porsche-design-system/` when your application is running.
+To prepare for the next steps, you need to ensure that the `public/assets/porsche-design-system` directory is not tracked by Git.
 
 ```
-mkdir -p ./public/assets/porsche-design-system
-mv ./@porsche-design-system/assets/* ./public/assets/porsche-design-system
+// .gitignore
+
+…
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+public/assets/porsche-design-system
 ```
 
 ### Step 3
@@ -32,10 +38,13 @@ mv ./@porsche-design-system/assets/* ./public/assets/porsche-design-system
 Extend the **scripts** section of your `package.json` file.
 
 ```
+// package.json
+
 "scripts": {
-  "postinstall": "npm run copy:@porsche-design-system/components-react && npm run copy:@porsche-design-system/components-js",
+  "postinstall": "npm run copy:@porsche-design-system/components-react && npm run copy:@porsche-design-system/components-js && npm run copy:@porsche-design-system/assets",
   "copy:@porsche-design-system/components-react": "rm -rf ./node_modules/@porsche-design-system/components-react && cp -r ./@porsche-design-system/components-react/. ./node_modules/@porsche-design-system/components-react",
   "copy:@porsche-design-system/components-js": "rm -rf ./node_modules/@porsche-design-system/components-js && cp -r ./@porsche-design-system/components-js/. ./node_modules/@porsche-design-system/components-js",
+  "copy:@porsche-design-system/assets": "rm -rf ./public/assets/porsche-design-system && mkdir -p ./public/assets/porsche-design-system && cp -r ./@porsche-design-system/assets/. ./public/assets/porsche-design-system",
   …
 }
 ```
