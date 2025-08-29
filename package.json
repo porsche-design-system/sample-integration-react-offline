@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "npm run copy:@porsche-design-system/components-react && npm run copy:@porsche-design-system/components-js",
+    "postinstall": "npm run copy:@porsche-design-system/components-react && npm run copy:@porsche-design-system/components-js && npm run copy:@porsche-design-system/assets",
     "copy:@porsche-design-system/components-react": "rm -rf ./node_modules/@porsche-design-system/components-react && cp -r ./@porsche-design-system/components-react/. ./node_modules/@porsche-design-system/components-react",
     "copy:@porsche-design-system/components-js": "rm -rf ./node_modules/@porsche-design-system/components-js && cp -r ./@porsche-design-system/components-js/. ./node_modules/@porsche-design-system/components-js",
+    "copy:@porsche-design-system/assets": "rm -rf ./public/assets/porsche-design-system && mkdir -p ./public/assets/porsche-design-system && cp -r ./@porsche-design-system/assets/. ./public/assets/porsche-design-system",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:ci": "PUBLIC_BASE_PATH=/sample-integration-react-offline npm run build",
