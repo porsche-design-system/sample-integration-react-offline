@@ -42,19 +42,34 @@ Extend the **scripts** section of your `package.json` file.
 
 ### Step 3
 
+Exclude Porsche Design System from Vite's cache.
+
+```
+// vite.config.ts
+
+export default defineConfig({
+  optimizeDeps: {
+    exclude: ['@porsche-design-system/components-react', '@porsche-design-system/components-js'],
+  },
+  plugins: [react()],
+})
+```
+
+### Step 4
+
 Add the `@porsche-design-system/components-react` npm package with version `3.29.0`.
 
 ```
 npm install @porsche-design-system/components-react@3.29.0
 ```
 
-### Step 4
+### Step 5
 
 Wrap your application with the `<PorscheDesignSystemProvider />`, then integrate the Porsche Design System components you need.
 
 For additional information on how to integrate Partials and Tailwind CSS, you can also refer to the [Getting Started](https://designsystem.porsche.com/v3/developing/react/getting-started) section of the official documentation.
 
-```tsx
+```
 // src/main.tsx
 
 import { PButton, PFlag, PWordmark, PorscheDesignSystemProvider } from '@porsche-design-system/components-react';
@@ -71,7 +86,7 @@ createRoot(document.getElementById('root')!).render(
 );
 ```
 
-### Step 5
+### Step 6
 
 Once the web application is built and served, open your browser's developer console.
 All Porsche Design System assets should then be loaded from `${YOUR_BASE_URL}`.
