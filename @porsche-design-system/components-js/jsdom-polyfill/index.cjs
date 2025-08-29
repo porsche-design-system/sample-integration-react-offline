@@ -4284,7 +4284,7 @@ function requireAlignLabel7a9d9074 () {
 	return alignLabel7a9d9074;
 }
 
-var appGlobals0bfe349b = {};
+var appGlobals5f855700 = {};
 
 var getCDNBaseURL6089b033 = {};
 
@@ -4302,18 +4302,18 @@ function requireGetCDNBaseURL6089b033 () {
 	return getCDNBaseURL6089b033;
 }
 
-var hasRequiredAppGlobals0bfe349b;
+var hasRequiredAppGlobals5f855700;
 
-function requireAppGlobals0bfe349b () {
-	if (hasRequiredAppGlobals0bfe349b) return appGlobals0bfe349b;
-	hasRequiredAppGlobals0bfe349b = 1;
+function requireAppGlobals5f855700 () {
+	if (hasRequiredAppGlobals5f855700) return appGlobals5f855700;
+	hasRequiredAppGlobals5f855700 = 1;
 
 	const getCDNBaseURL = requireGetCDNBaseURL6089b033();
 	const validateProps = requireValidatePropsAe65310f();
 
 	// index.ts
-	var FONT_FACE_CDN_FILE_COM = "font-face.ea73e8e.css";
-	var FONT_FACE_CDN_FILE_CN = "font-face.cn.ea73e8e.css";
+	var FONT_FACE_CDN_FILE_COM = "font-face.83d493f.css";
+	var FONT_FACE_CDN_FILE_CN = "font-face.cn.83d493f.css";
 
 	const validatePartialUsage = () => {
 	    // TODO: before reactivating we need to be able to distinguish between Light DOM and/or Shadow DOM usage.
@@ -4408,10 +4408,10 @@ function requireAppGlobals0bfe349b () {
 
 	const globalScripts = appGlobalScript;
 
-	appGlobals0bfe349b.globalScripts = globalScripts;
+	appGlobals5f855700.globalScripts = globalScripts;
 
 	
-	return appGlobals0bfe349b;
+	return appGlobals5f855700;
 }
 
 var bannerUtils2cc83734 = {};
@@ -31350,7 +31350,7 @@ function requirePorscheDesignSystem_cjs () {
 	Object.defineProperty(porscheDesignSystem_cjs, '__esModule', { value: true });
 
 	const validateProps = requireValidatePropsAe65310f();
-	const appGlobals = requireAppGlobals0bfe349b();
+	const appGlobals = requireAppGlobals5f855700();
 	requireGetCDNBaseURL6089b033();
 
 	/*
@@ -31382,7 +31382,7 @@ function getDynamicModules() {
 	return dynamicModules || (dynamicModules = {
 		"/src/index.js": requireSrc,
 		"/src/lib/align-label-7a9d9074.js": requireAlignLabel7a9d9074,
-		"/src/lib/app-globals-0bfe349b.js": requireAppGlobals0bfe349b,
+		"/src/lib/app-globals-5f855700.js": requireAppGlobals5f855700,
 		"/src/lib/banner-utils-2cc83734.js": requireBannerUtils2cc83734,
 		"/src/lib/borderRadiusLarge-a0aa3a01.js": requireBorderRadiusLargeA0aa3a01,
 		"/src/lib/borderRadiusMedium-758b9411.js": requireBorderRadiusMedium758b9411,
@@ -37219,7 +37219,7 @@ function requireLoader_cjs () {
 	Object.defineProperty(loader_cjs, '__esModule', { value: true });
 
 	const validateProps = requireValidatePropsAe65310f();
-	const appGlobals = requireAppGlobals0bfe349b();
+	const appGlobals = requireAppGlobals5f855700();
 	requireGetCDNBaseURL6089b033();
 
 	const defineCustomElements = async (win, options) => {
