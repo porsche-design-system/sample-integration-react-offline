@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-      <img src="https://cdn.ui.porsche.com/porsche-design-system/flags/de.b575e11.svg" width="24" height="24" loading="lazy" alt="Flag of Germany" />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
