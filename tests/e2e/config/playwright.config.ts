@@ -37,7 +37,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm run start',
-    port: 3000,
+    command: 'npm run dev',
+    port: 5173,
   },
 });
