@@ -19,7 +19,7 @@
     "npm:clean": "npm cache clean --force"
   },
   "dependencies": {
-    "@porsche-design-system/components-react": "^3.29.0",
+    "@porsche-design-system/components-react": "3.35.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
